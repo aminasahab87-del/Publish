@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Download InnovateX - Student Innovation Platform">
+
+    <title>InnovateX - Download App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: #081525;
+            border-bottom: 1px solid #17283d;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4da3ff;
+        }
+
+        nav a {
+            color: #c9d7e8;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    rgba(50,130,255,0.25),
+                    transparent 45%
+                ),
+                #07111f;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 30px;
+            background: rgba(77,163,255,0.12);
+            border: 1px solid rgba(77,163,255,0.4);
+            color: #6db4ff;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 8vw, 80px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .gradient {
+            background: linear-gradient(
+                90deg,
+                #4da3ff,
+                #8b5cf6
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+            color: #aebed1;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* DOWNLOAD BUTTON */
+        .download-btn {
+            display: inline-block;
+            padding: 16px 30px;
+            border-radius: 12px;
+
+            background: linear-gradient(
+                90deg,
+                #2388ff,
+                #704cff
+            );
+
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+
+            box-shadow:
+                0 10px 30px rgba(35,136,255,0.25);
+
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .info {
+            margin-top: 18px;
+            color: #73849a;
+            font-size: 13px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        /* FEATURES */
+        .features {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .card {
+            background: #0c1b2e;
+            border: 1px solid #172b43;
+
+            border-radius: 18px;
+            padding: 30px;
+
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #328cff;
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #94a7bd;
+            font-size: 14px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about p {
+            color: #aebed1;
+        }
+
+        /* DOWNLOAD SECTION */
+        .download-box {
+            max-width: 800px;
+            margin: auto;
+
+            text-align: center;
+
+            padding: 55px 25px;
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0d2139,
+                    #111a35
+                );
+
+            border: 1px solid #203957;
+        }
+
+        .download-box h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .download-box p {
+            color: #9fb1c6;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+
+            color: #718198;
+
+            border-top: 1px solid #17283d;
+
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 750px) {
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            InnovateX
+        </div>
+
+        <a href="#download">
+            Download
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                STUDENT INNOVATION PLATFORM
+            </div>
+
+            <h1>
+                Turn Your Ideas Into
+                <span class="gradient">
+                    Innovation.
+                </span>
+            </h1>
+
+            <p>
+                InnovateX is a student-friendly platform
+                where students can submit, explore and
+                showcase innovative ideas and projects.
+            </p>
+
+
+            <!-- APK DOWNLOAD -->
+
+            <a
+                class="download-btn"
+                href="InnovateX-debug.apk"
+                download="InnovateX.apk"
+            >
+                📥 Download InnovateX
+            </a>
+
+            <div class="info">
+                Android App • APK • Free Download
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- FEATURES -->
+    <section>
+
+        <h2 class="section-title">
+            Why InnovateX?
+        </h2>
+
+        <div class="features">
+
+
+            <div class="card">
+
+                <div class="icon">
+                    💡
+                </div>
+
+                <h3>
+                    Submit Ideas
+                </h3>
+
+                <p>
+                    Students can submit their innovative
+                    ideas and projects through a simple
+                    and friendly interface.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Analysis
+                </h3>
+
+                <p>
+                    AI-based analysis can help review
+                    submitted ideas and identify
+                    innovative concepts.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Showcase Innovation
+                </h3>
+
+                <p>
+                    Explore innovative concepts and
+                    give students a place to showcase
+                    their creativity.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section>
+
+        <div class="about">
+
+            <h2 class="section-title">
+                About InnovateX
+            </h2>
+
+            <p>
+                InnovateX is designed to encourage
+                students to think creatively, develop
+                new solutions and share their ideas
+                through one convenient platform.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOWNLOAD -->
+    <section id="download">
+
+        <div class="download-box">
+
+            <h2>
+                Ready to Innovate?
+            </h2>
+
+            <p>
+                Download the InnovateX Android app
+                and start exploring innovation.
+            </p>
+
+
+            <a
+                class="download-btn"
+                href="InnovateX-debug.apk"
+                download="InnovateX.apk"
+            >
+                📱 Download APK
+            </a>
+
+
+            <p style="font-size:12px;margin-top:18px;">
+                File: InnovateX-debug.apk
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 InnovateX.
+        All rights reserved.
+
+    </footer>
+
+</body>
+  </html> 
